@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glance Privacy Policy</title>
+<meta name="description" content="How the Glance iPad dashboard handles your data.">
+<style>
+  :root {
+    --bg: #ffffff; --text: #1c1c1e; --muted: #6e6e73; --rule: #e5e5ea; --accent: #c93400; --card: #f2f2f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #000000; --text: #f2f2f7; --muted: #98989d; --rule: #2c2c2e; --accent: #ff9f0a; --card: #1c1c1e; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { font-size: 34px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.5px; }
+  h2 { font-size: 21px; margin: 36px 0 8px; }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 22px; margin: 0 0 10px; }
+  .meta { color: var(--muted); margin-bottom: 28px; }
+  .summary { background: var(--card); border-radius: 16px; padding: 18px 20px; margin: 24px 0; }
+  .summary p:last-child { margin-bottom: 0; }
+  a { color: var(--accent); }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 15px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Glance Privacy Policy</h1>
+  <p class="meta">Effective 4 November 2026</p>
+
+  <div class="summary">
+    <p><strong>In short:</strong> Glance is a private iPad dashboard for students. It has no ads, no analytics and no tracking, and it doesn't sell or share your data. Your information stays on your iPad. Your school password is never stored anywhere.</p>
+  </div>
+
+  <h2>Who we are</h2>
+  <p>Glance is a small, non-commercial app made by a parent for their child and the child's friends. It isn't on the App Store. Questions about this policy: <a href="mailto:sussygamer.rbx@gmail.com">sussygamer.rbx@gmail.com</a>.</p>
+
+  <h2>Google Calendar and Google Tasks (optional)</h2>
+  <ul>
+    <li>If you choose to sign in with Google, Glance asks for <strong>read-only access to your calendars</strong> and <strong>access to your Google Tasks</strong>, so it can show your events and tasks and let you tick tasks off.</li>
+    <li>The iPad talks to Google directly. Your calendar and task data is <strong>never sent to us or to any other server</strong>.</li>
+    <li>A copy is kept only on your iPad, so the dashboard still works offline. Your Google sign-in token is stored in the iPad's secure Keychain.</li>
+    <li>Glance does not use Google data for advertising, does not sell it, does not use it to train AI models, and does not let any person read it.</li>
+  </ul>
+  <p>Glance's use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>PRONOTE homework</h2>
+  <ul>
+    <li>To show homework, Glance connects to your school's PRONOTE through a small sync service hosted by <a href="https://supabase.com">Supabase</a> in the European Union (Ireland).</li>
+    <li>When you log in, your password (or the QR code and PIN) is sent once, over an encrypted connection, to log in to PRONOTE. It is <strong>never stored</strong>, not on the iPad and not on the server.</li>
+    <li>After that, the iPad keeps only a PRONOTE access token, in its secure Keychain. PRONOTE replaces this token each time Glance syncs.</li>
+    <li>The sync service is <strong>stateless</strong>. It passes your homework back to your iPad and keeps nothing: no database, and no saved requests or homework. Supabase may keep standard technical logs (such as the time of a request and an IP address) for a short period to run its service.</li>
+    <li>Homework is shown exactly as your teachers wrote it and is stored only on your iPad.</li>
+  </ul>
+
+  <h2>Calendars and reminders on the iPad</h2>
+  <p>If you allow it, Glance reads the calendars and reminder lists stored on the iPad (using Apple's EventKit) and can mark reminders as done. This data never leaves the iPad.</p>
+
+  <h2>Weather and flight radar</h2>
+  <ul>
+    <li><strong>Weather:</strong> the location of the city you choose is sent to <a href="https://open-meteo.com">Open-Meteo</a> to get the forecast. Glance doesn't use your device's location.</li>
+    <li><strong>Flight radar:</strong> the map area you're looking at is sent to <a href="https://opensky-network.org">The OpenSky Network</a> to get nearby aircraft.</li>
+    <li>These requests contain no personal information. Like any website, these services see your iPad's IP address.</li>
+  </ul>
+
+  <h2>Camera</h2>
+  <p>The camera is used only to scan your PRONOTE login QR code. No photos or video are saved or sent anywhere.</p>
+
+  <h2>Children</h2>
+  <p>Glance is meant for school students and is set up with a parent's involvement. It collects only what's needed to show a student's own schedule and homework, and never shares it.</p>
+
+  <h2>Deleting your data</h2>
+  <ul>
+    <li><strong>Settings → PRONOTE → Log Out</strong> deletes the PRONOTE token and the saved homework from the iPad.</li>
+    <li><strong>Settings → Calendars &amp; Tasks → Sign Out</strong> deletes the Google token and saved Google data, and tells Google to revoke access.</li>
+    <li>Deleting the app removes everything it stored on the iPad.</li>
+    <li>You can also remove Glance's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  </ul>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted on this page with a new date.</p>
+
+  <footer>
+    Glance is not affiliated with Google, Apple, Index Éducation (PRONOTE), Supabase, Open-Meteo or The OpenSky Network.
+  </footer>
+</main>
+</body>
+</html>
